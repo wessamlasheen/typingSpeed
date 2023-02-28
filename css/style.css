@@ -1,0 +1,103 @@
+:root {
+  --blue-color: rgb(35, 137, 221);
+}
+body {
+  background-color: #eee;
+  user-select: none;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*:focus {
+  outline: 2px solid var(--blue-color);
+}
+.game {
+  text-transform: capitalize;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.game h2 {
+  background-color: var(--blue-color);
+  padding: 10px 0;
+  text-align: center;
+  color: #fff;
+}
+.game .container {
+  width: 80%;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  margin: 0 auto;
+}
+.game .container .levels {
+  border: none;
+  width: 100%;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.game .container .levels option {
+  margin: 10px 0;
+}
+.game .container > div,
+.game .container input[type="text"],
+.game .container .levels {
+  border-radius: 3px;
+  font-size: 12px;
+  text-align: center;
+  padding: 15px;
+  margin-bottom: 10px;
+}
+.game .container .info {
+  background-color: #fff;
+}
+.game .container .info span {
+  color: var(--blue-color);
+  font-weight: bold;
+}
+.game .container .start {
+  background-color: #009688;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+}
+.game .container .wType {
+  font-weight: bold;
+  font-size: 30px;
+  color: var(--blue-color);
+}
+.game .container input[type="text"] {
+  width: 100%;
+  border: none;
+}
+.game .container .word-writing {
+  background-color: #fff;
+}
+.game .container .word-writing span {
+  background-color: var(--blue-color);
+  padding: 10px 5px;
+  color: #fff;
+  border-radius: 3px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+.game .container .data {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+.game .data .timeLeft {
+  color: var(--blue-color);
+  font-weight: bold;
+  font-size: 14px;
+}
+.finish.good {
+  color: var(--blue-color);
+  font-weight: bold;
+}
+.finish.bad {
+  color: red;
+  font-weight: bold;
+  font-size: 26px !important;
+}
